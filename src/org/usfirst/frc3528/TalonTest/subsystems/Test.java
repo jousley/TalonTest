@@ -11,6 +11,7 @@ package org.usfirst.frc3528.TalonTest.subsystems;
 import org.usfirst.frc3528.TalonTest.RobotMap;
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc3528.TalonTest.commands.DriveWithJoystick;
 /**
  *
@@ -34,5 +35,6 @@ public class Test extends Subsystem {
     
     public void drive(double leftY) {
         myTalon.set(leftY);
+        //SmartDashboard.putNumber("Joystick Y", leftY);
     }
 }
